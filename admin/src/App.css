@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --primary-color: #0094ff;
+  --secondary-color: #081620;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.responsiveTable .ant-table {
+  overflow-x: scroll;
+}
+
+th,
+td {
+  white-space: nowrap;
+}
+
+.Chat-section {
+  height: calc(100vh - 115px);
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-position: center !important;
+  background-size: cover !important;
+  background-color: gainsboro;
+}
+
+.sm-avatar {
+  height: 40px;
+  width: 40px;
+}
+
+.user-chat {
+  cursor: pointer;
+}
+
+.chat-info {
+  width: calc(100% - 60px);
+}
+
+.msg {
+  width: fit-content;
+}
+
+.msg_scrollable{
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+.truncate {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  background: #fff;
+}
+
+.chats_list {
+  height: 100%;
+}
+
+.chat-convo {
+  position: relative;
+}
+
+.send {
+  position: absolute;
+  width: 98%;
+  top: calc(100% - 50px);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0px !important;
+}
+
+.btn_primary {
+  border: 0;
+  outline: none;
+  padding: 10px;
+  background: var(--primary-color);
+}
+
+.bg-blue {
+  background: var(--primary-color);
+  color: white;
+}
+
+.bg-gray {
+  background: gainsboro;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+
+@media(max-width: 700px){
+  .chats_list,
+  .chat-convo{
+    width: 100% !important;
+  }
+}
